@@ -1,17 +1,11 @@
 package net.neskul.simplecalculator.frames;
 
 import net.neskul.simplecalculator.Calculations.Eval;
-import net.neskul.simplecalculator.SimpleCalculator;
-import net.neskul.simplecalculator.error.ErrorHandling;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
 public class EvalFrame {
     public static final JFrame frame = new JFrame();
@@ -134,6 +128,8 @@ public class EvalFrame {
 
         // Eval Help
         evalHelpItem.addActionListener(e -> {
+            logger.debug("Eval Help window Opened!");
+
             JDialog box = new JDialog(frame, "Eval Help");
             JLabel label = new JLabel("<html>The eval funtion is made with EvalEx (made by ezylang on github). <br>" +
                     "SQRT(n) - Square root<br>" +
@@ -173,6 +169,8 @@ public class EvalFrame {
 
         // About
         aboutItem.addActionListener(e -> {
+            logger.debug("About window open!");
+
             JDialog box = new JDialog(frame, "Eval Help");
             JLabel label = new JLabel("<html><marquee>Hi!</marquee><br>" +
                     "I am neskul, and I made this calculator app! <br>" +

@@ -38,11 +38,13 @@ public class SimpleFrame {
 
     public static final JMenuBar menuBar = new JMenuBar();
     public static final JMenu modesMenu = new JMenu("Modes");
+    public static final JMenu helpMenu = new JMenu("Help");
     public static final JMenuItem advancedItem = new JMenuItem("Advanced Mode");
     public static final JMenuItem simpleItem = new JMenuItem("Simple Mode");
     public static final JMenuItem evalItem = new JMenuItem("Eval Mode");
     public static final JMenuItem exitItem = new JMenuItem("Exit");
-
+    public static final JMenuItem aboutItem = new JMenuItem("About");
+    public static final JMenuItem evalHelpItem = new JMenuItem("Eval Help");
 
     public static String operation;
 
@@ -91,6 +93,7 @@ public class SimpleFrame {
             frame.add(multiplicationButton);
 
             multiplicationButton.addActionListener(e -> {
+                logger.debug("Operation: Multiplication");
                 operation = "multiplication";
             });
 
@@ -99,6 +102,7 @@ public class SimpleFrame {
             frame.add(divisonButton);
 
             divisonButton.addActionListener(e -> {
+                logger.debug("Operation: Division");
                 operation = "division";
             });
 
@@ -107,6 +111,7 @@ public class SimpleFrame {
             frame.add(additionButton);
 
             additionButton.addActionListener(e -> {
+                logger.debug("Operation: Addition");
                 operation = "addition";
             });
 
@@ -115,6 +120,7 @@ public class SimpleFrame {
             frame.add(subtractionButton);
 
             subtractionButton.addActionListener(e -> {
+                logger.debug("Operation: Subtraction");
                 operation = "subtraction";
             });
 
@@ -123,6 +129,7 @@ public class SimpleFrame {
             frame.add(modulusButton);
 
             modulusButton.addActionListener(e -> {
+                logger.debug("Operation: Modulus");
                 operation = "modulus";
             });
 
@@ -131,6 +138,7 @@ public class SimpleFrame {
             frame.add(squareRootButton);
 
             squareRootButton.addActionListener(e -> {
+                logger.debug("Operation: Square Root");
                 operation = "squareroot";
             });
 
@@ -138,6 +146,7 @@ public class SimpleFrame {
             radiansButton.setBounds((SCREEN_WIDTH / 2) - 220, (SCREEN_HEIGHT / 3) + (170 + 60), 75, 50); // x, y, width, height
 
             radiansButton.addActionListener(e -> {
+                logger.debug("Operation: Radians");
                 operation = "radians";
             });
 
@@ -145,6 +154,7 @@ public class SimpleFrame {
             degreesButton.setBounds((SCREEN_WIDTH / 2) - (220 - 85), (SCREEN_HEIGHT / 3) + (170 + 60), 75, 50); // x, y, width, height
 
             degreesButton.addActionListener(e -> {
+                logger.debug("Operation: Degrees");
                 operation = "degrees";
             });
 
@@ -152,6 +162,7 @@ public class SimpleFrame {
             tangentButton.setBounds((SCREEN_WIDTH / 2) - (220 - 170), (SCREEN_HEIGHT / 3) + (170 + 60), 75, 50); // x, y, width, height
 
             tangentButton.addActionListener(e -> {
+                logger.debug("Operation: Tangent");
                 operation = "tangent";
             });
 
@@ -159,6 +170,7 @@ public class SimpleFrame {
             sineButton.setBounds((SCREEN_WIDTH / 2) - (220 - 255), (SCREEN_HEIGHT / 3) + (170 + 60), 75, 50); // x, y, width, height;
 
             sineButton.addActionListener(e -> {
+                logger.debug("Operation: Sine");
                 operation = "sine";
             });
 
@@ -166,6 +178,7 @@ public class SimpleFrame {
             cosineButton.setBounds((SCREEN_WIDTH / 2) - (220 - 340), (SCREEN_HEIGHT / 3) + (170 + 60), 75, 50); // x, y, width, height
 
             cosineButton.addActionListener(e -> {
+                logger.debug("Operation: Cosine");
                 operation = "cosine";
             });
 
@@ -174,6 +187,7 @@ public class SimpleFrame {
             frame.add(submitButton);
 
             submitButton.addActionListener(e -> {
+                logger.debug("Operation: Submit");
                Submit.submit(textAreaNum1, textAreaNum2, textAreaResultSimple, operation);
             });
 
@@ -214,6 +228,8 @@ public class SimpleFrame {
 
             // Eval mode
             evalItem.addActionListener(e -> {
+                logger.debug("Entered Eval mode!");
+
                 frame.setVisible(false);
                 new EvalFrame();
             });
@@ -228,6 +244,49 @@ public class SimpleFrame {
 
             modesMenu.addSeparator();
             modesMenu.add(exitItem);
+
+            aboutItem.addActionListener(e -> {
+                logger.debug("About window open!");
+
+                JDialog box = new JDialog(frame, "Eval Help");
+                JLabel label = new JLabel("<html><marquee>Hi!</marquee><br>" +
+                        "I am neskul, and I made this calculator app! <br>" +
+                        "The eval function was developed by ezylang on github. <br>" +
+                        "This calculator uses Log4J and EvalEx. <br>" +
+                        "If you dont know what eval is, its basicly just an app that reads ecuations and expressions to develop an answer.");
+
+                JButton closeButton = new JButton("Close");
+
+                label.setFont(new Font("Verdana", Font.PLAIN, 16));
+                box.setLayout(new FlowLayout());
+                box.add(label);
+                box.add(closeButton);
+
+            /* BufferedImage image;
+            try {
+                image = ImageIO.read(getClass().getResourceAsStream("/images/ham.png"));
+            } catch (IOException ex) {
+                logger.fatal("An error occured reading image");
+                ErrorHandling.throwExceptionGUI(null, ex, "An error occured reading image", null);
+                ex.printStackTrace();
+                throw new RuntimeException(ex);
+            }
+
+            JLabel picLabel = new JLabel(new ImageIcon(image));
+
+            box.add(picLabel); */
+                box.pack();
+
+                // box.setSize(100, 125);
+                box.setVisible(true);
+
+                closeButton.addActionListener(l -> {
+                    box.setVisible(false); // just in case (:
+                    box.dispose();
+                });
+            });
+
+            helpMenu.add(aboutItem);
 
             // Frame
             frame.setJMenuBar(menuBar);

@@ -18,7 +18,7 @@
             <PatternLayout pattern="${LOG_PATTERN}"/>
 
             <Policies>
-                <TimeBasedTriggeringPolicy interval="100" modulate="true"/>
+                <SizeBasedTriggeringPolicy interval="10MB"/>
             </Policies>
 
         </RollingFile>
@@ -32,7 +32,7 @@
     <Loggers>
 
         <!-- Your application logs -->
-        <Root level="info">
+        <Root level="trace">
             <AppenderRef ref="FileAppender"/>
             <AppenderRef ref="ConsoleAppender"/>
         </Root>

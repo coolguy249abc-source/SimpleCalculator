@@ -1,0 +1,33 @@
+2026-02-07 11:17:38.017 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$12:185 - Advanced mode activated
+2026-02-07 11:25:16.387 [main] DEBUG net.neskul.simplecalculator.SimpleCalculator.main:17 - Loaded program
+2026-02-07 11:25:16.521 [main] DEBUG net.neskul.simplecalculator.SimpleCalculator.main:19 - SimpleFrame initialized
+2026-02-07 11:25:24.746 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$0:96 - Operation: Multiplication
+2026-02-07 11:25:27.169 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$3:123 - Operation: Subtraction
+2026-02-07 11:25:30.753 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$11:190 - Operation: Submit
+2026-02-07 11:25:31.425 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$5:141 - Operation: Square Root
+2026-02-07 11:25:31.769 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$11:190 - Operation: Submit
+2026-02-07 11:25:32.129 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$4:132 - Operation: Modulus
+2026-02-07 11:25:32.433 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$11:190 - Operation: Submit
+2026-02-07 11:25:32.801 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$3:123 - Operation: Subtraction
+2026-02-07 11:25:33.137 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$11:190 - Operation: Submit
+2026-02-07 11:25:33.553 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$2:114 - Operation: Addition
+2026-02-07 11:25:33.977 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$11:190 - Operation: Submit
+2026-02-07 11:25:34.377 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$1:105 - Operation: Division
+2026-02-07 11:25:34.809 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$11:190 - Operation: Submit
+2026-02-07 11:25:35.433 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$0:96 - Operation: Multiplication
+2026-02-07 11:25:35.873 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$11:190 - Operation: Submit
+2026-02-07 11:25:37.130 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$12:199 - Advanced mode activated
+2026-02-07 11:25:38.313 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$6:149 - Operation: Radians
+2026-02-07 11:25:38.761 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$11:190 - Operation: Submit
+2026-02-07 11:25:39.169 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$7:157 - Operation: Degrees
+2026-02-07 11:25:39.617 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$11:190 - Operation: Submit
+2026-02-07 11:25:40.081 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$8:165 - Operation: Tangent
+2026-02-07 11:25:40.505 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$11:190 - Operation: Submit
+2026-02-07 11:25:40.841 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$9:173 - Operation: Sine
+2026-02-07 11:25:41.145 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$11:190 - Operation: Submit
+2026-02-07 11:25:41.393 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$10:181 - Operation: Cosine
+2026-02-07 11:25:41.642 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$11:190 - Operation: Submit
+2026-02-07 11:25:44.218 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.SimpleFrame.lambda$new$14:231 - Entered Eval mode!
+2026-02-07 11:25:50.970 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.EvalFrame.lambda$new$4:131 - Eval Help window Opened!
+2026-02-07 11:25:52.786 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.EvalFrame.lambda$new$6:172 - About window open!
+2026-02-07 11:25:55.802 [AWT-EventQueue-0] DEBUG net.neskul.simplecalculator.frames.EvalFrame.lambda$new$3:122 - Exiting program...

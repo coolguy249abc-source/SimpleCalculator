@@ -6,7 +6,8 @@ import net.neskul.simplecalculator.frames.SimpleFrame;
 import javax.swing.*;
 import java.awt.*;
 
-import org.apache.logging.log4j.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class SimpleCalculator {
     private static Logger logger = LogManager.getLogger(SimpleCalculator.class.getName());

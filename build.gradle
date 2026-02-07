@@ -1,9 +1,16 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
+
 
 group = 'net.neskul.simplecalculator'
 version = '1.0-SNAPSHOT'
+
+application {
+    mainClass = 'net.neskul.simplecalculator.SimpleCalculator'
+}
 
 repositories {
     mavenCentral()

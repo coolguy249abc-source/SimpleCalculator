@@ -57,6 +57,24 @@ public class Submit {
                     }
 
                     break;
+
+                case "modulus":
+                    num1 = Double.parseDouble(textFieldInput1.getText());
+                    num2 = Double.parseDouble(textFieldInput2.getText());
+
+                    if(num1 == 0 || num2 == 0) {
+                        textFieldOutput.setText("Undefined");
+                        ErrorHandling.throwWarningGUI(null, "Can't modulate by 0.", null);
+
+                        logger.warn("modulation by 0 occurred.");
+                    }
+                    else {
+
+                        result = num1 % num2;
+                        textFieldOutput.setText(String.valueOf(result));
+                    }
+
+                    break;
                 case "squareroot":
                     num1 = Double.parseDouble(textFieldInput1.getText());
                     num2 = Double.parseDouble(textFieldInput2.getText());
